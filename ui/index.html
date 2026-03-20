@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kage Bojutsu - 樹狀剪貼簿</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Top Bar -->
+    <header id="topbar">
+      <div class="topbar-left">
+        <span class="app-title">🌳 Kage Bojutsu</span>
+      </div>
+      <div class="topbar-center">
+        <input type="text" id="search-input" placeholder="Search templates..." />
+      </div>
+      <div class="topbar-right">
+        <button id="btn-add-folder" title="Add Folder">+ Folder</button>
+        <button id="btn-add-template" title="Add Template">+ Template</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div id="main">
+      <!-- Left Sidebar: Tree View -->
+      <aside id="sidebar">
+        <div id="tree-container"></div>
+      </aside>
+
+      <!-- Right Panel: Preview / Edit -->
+      <section id="panel">
+        <div id="panel-empty">
+          <div class="empty-state">
+            <div class="empty-icon">📋</div>
+            <p>Select a template to preview</p>
+            <p class="text-secondary">Click any template in the tree to view its content</p>
+          </div>
+        </div>
+        <div id="panel-content" class="hidden">
+          <div id="panel-header">
+            <h2 id="panel-title"></h2>
+            <div id="panel-actions">
+              <button id="btn-edit" title="Edit">Edit</button>
+              <button id="btn-copy" title="Copy to clipboard">Copy</button>
+            </div>
+          </div>
+          <pre id="panel-body"></pre>
+        </div>
+        <div id="panel-edit" class="hidden">
+          <div id="edit-header">
+            <input type="text" id="edit-title" placeholder="Template title" />
+            <div id="edit-actions">
+              <button id="btn-save" class="btn-primary">Save</button>
+              <button id="btn-cancel">Cancel</button>
+            </div>
+          </div>
+          <textarea id="edit-content" placeholder="Template content..."></textarea>
+        </div>
+      </section>
+    </div>
+
+    <!-- Bottom Bar: Quick Bindings -->
+    <footer id="bottombar">
+      <div class="bindings-label">Quick Bindings:</div>
+      <div id="bindings-list"></div>
+    </footer>
+
+    <!-- Toast -->
+    <div id="toast" class="hidden"></div>
+
+    <!-- Context Menu -->
+    <div id="context-menu" class="hidden">
+      <div class="ctx-item" data-action="edit">Edit</div>
+      <div class="ctx-item" data-action="delete">Delete</div>
+      <div class="ctx-separator"></div>
+      <div class="ctx-submenu">
+        <div class="ctx-item ctx-submenu-trigger">Bind to Alt+...</div>
+        <div class="ctx-submenu-content" id="ctx-bind-list"></div>
+      </div>
+      <div class="ctx-item" data-action="unbind">Unbind</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

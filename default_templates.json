@@ -1,0 +1,43 @@
+{
+  "tree": [
+    {
+      "type": "folder",
+      "name": "Code Review",
+      "expanded": true,
+      "children": [
+        { "type": "template", "id": "cr-1", "title": "Review PR", "content": "Please review this PR focusing on:\n- Code correctness\n- Edge cases\n- Performance implications\n- Test coverage" },
+        { "type": "template", "id": "cr-2", "title": "Bug Report", "content": "Bug description:\n\nSteps to reproduce:\n1. \n2. \n3. \n\nExpected behavior:\n\nActual behavior:\n\nEnvironment:" }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Writing",
+      "expanded": false,
+      "children": [
+        { "type": "template", "id": "wr-1", "title": "Blog Intro", "content": "In this article, we'll explore how to..." },
+        { "type": "template", "id": "wr-2", "title": "Email Reply", "content": "Thank you for reaching out.\n\nI've reviewed your request and..." }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Daily",
+      "expanded": false,
+      "children": [
+        { "type": "template", "id": "dl-1", "title": "Standup", "content": "Yesterday:\n- \n\nToday:\n- \n\nBlockers:\n- " },
+        { "type": "template", "id": "dl-2", "title": "Meeting Notes", "content": "Date:\nAttendees:\n\nAgenda:\n1. \n\nNotes:\n\nAction Items:\n- [ ] " }
+      ]
+    }
+  ],
+  "quickBindings": {
+    "1": "cr-1",
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null,
+    "10": null
+  }
+}
