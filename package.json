@@ -1,0 +1,10 @@
+{
+  "name": "kage-bojutsu",
+  "version": "0.1.0",
+  "description": "Kage Bojutsu - 樹狀剪貼簿: A tree-structured prompt clipboard manager",
+  "scripts": {
+    "tauri": "cargo tauri",
+    "dev": "cargo tauri dev",
+    "build": "cargo tauri build"
+  }
+}
