@@ -1,19 +1,19 @@
-# 🌳 Kage Bojutsu (影棒術)
+# Kage Bojutsu
 
-> A tree-structured prompt template clipboard manager with global hotkeys, quick bindings, and system tray — built with Tauri v2.
+<img src="assets/logo.jpg" alt="Kage Bojutsu logo" height="150">
 
-**Kage Bojutsu** (影棒術 — "shadow staff technique") organizes your prompt templates in a tree hierarchy, letting you copy any template to clipboard instantly via global hotkeys.
+**Kage Bojutsu** (影法術, かげぼうじゅつ — "shadows technique") organizes your prompt templates in a tree hierarchy, letting you copy any template to clipboard instantly via global hotkeys.
 
-## ✨ Features
+## Features
 
-- **🌲 Tree-structured templates** — Organize prompts in nested folders
-- **⌨️ Global hotkey** (`Alt+F2`) — Toggle the window from anywhere
-- **🔢 Quick bindings** (`Alt+1`~`Alt+0`) — Bind 10 templates for instant copy
-- **🖥️ System tray** — Runs silently in background
-- **🌙 Dark theme** — Catppuccin-inspired UI
-- **💻 Cross-platform** — macOS and Windows
+- **Tree-structured templates** — Organize prompts in nested folders
+- **Global hotkey** (`Alt+F2`) — Toggle the window from anywhere
+- **Quick bindings** (`Alt+1`~`Alt+0`) — Bind 10 templates for instant copy
+- **System tray** — Runs silently in background
+- **Dark theme** — Catppuccin-inspired UI
+- **Cross-platform** — macOS and Windows
 
-## 📸 How It Works
+## How It Works
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -33,7 +33,7 @@
 └─────────────────────────────────────────────┘
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -54,36 +54,36 @@ cargo tauri dev
 cargo tauri build
 ```
 
-| Platform | Output |
-|----------|--------|
-| macOS | `src-tauri/target/release/bundle/dmg/` |
-| Windows | `src-tauri\target\release\bundle\msi\` |
+| Platform | Output                                 |
+|----------|----------------------------------------|
+| macOS    | `src-tauri/target/release/bundle/dmg/` |
+| Windows  | `src-tauri\target\release\bundle\msi\` |
 
-## ⌨️ Keyboard Shortcuts
+## Keyboard Shortcuts
 
-| Shortcut | Action |
-|----------|--------|
-| `Alt+F2` | Show / hide window |
-| `Alt+1`~`Alt+9`, `Alt+0` | Quick copy bound template |
-| Click | Preview template |
-| Double-click | Copy to clipboard |
-| Right-click | Edit / Delete / Bind to hotkey |
+| Shortcut                 | Action                         |
+|--------------------------|--------------------------------|
+| `Alt+F2`                 | Show / hide window             |
+| `Alt+1`~`Alt+9`, `Alt+0` | Quick copy bound template      |
+| Click                    | Preview template               |
+| Double-click             | Copy to clipboard              |
+| Right-click              | Edit / Delete / Bind to hotkey |
 
-## 📂 Data Storage
+## Data Storage
 
 Templates are stored in JSON format:
 
-| Platform | Path |
-|----------|------|
-| macOS | `~/Library/Application Support/com.kagebojutsu.desktop/templates.json` |
-| Windows | `%APPDATA%/com.kagebojutsu.desktop/templates.json` |
+| Platform | Path                                                                   |
+|----------|------------------------------------------------------------------------|
+| macOS    | `~/Library/Application Support/com.kagebojutsu.desktop/templates.json` |
+| Windows  | `%APPDATA%/com.kagebojutsu.desktop/templates.json`                     |
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 - **Backend**: Rust + [Tauri v2](https://v2.tauri.app/)
 - **Frontend**: Vanilla JS + CSS (no framework)
 - **Plugins**: `tauri-plugin-clipboard-manager`, `tauri-plugin-global-shortcut`
 
-## 📝 License
+## License
 
 MIT
